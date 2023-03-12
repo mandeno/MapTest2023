@@ -1,5 +1,5 @@
 {
     "container": "map",
-    "accessToken": "",
-    "style": "mapbox://styles/mapbox/streets-v11"
+    "accessToken": "pk.eyJ1IjoicGV0cm9uaWxhbWFuZGVubyIsImEiOiJjajhvcm0zbDgwNm90MndvM2U1eDEzaXVyIn0.zfiIqCot7EXJervWn-5VaA",
+    "style": "mapbox://styles/petronilamandeno/clf4pej2g000401mv1l2nbrim", "center": [-104.475,21.482], "zoom": 10
 }

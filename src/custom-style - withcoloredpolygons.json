@@ -1,0 +1,53 @@
+{
+    "sources": {
+        "neighborhoods": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": []
+            }
+        }
+    },
+    "layers": [
+        {
+            "id": "neighborhoods-fill",
+            "type": "fill",
+            "source": "neighborhoods",
+            "paint": {
+                "fill-color": [
+                    "step",
+                    ["get", "count"],
+                    "#fff7fb",
+                    10, "#ece7f2",
+                    20, "#d0d1e6",
+                    50, "#a6bddb",
+                    100, "#74a9cf",
+                    250, "#3690c0",
+                    500, "#0570b0",
+                    750, "#045a8d",
+                    1000, "#023858"
+                ],
+                "fill-opacity": 0.5,
+                "fill-outline-color": "black"
+            },
+            "filter": [
+                "!=",
+                ["get", "count"],
+                0
+            ]
+        },
+        {
+            "id": "neighborhoods-outline",
+            "type": "line",
+            "source": "neighborhoods",
+            "paint": {
+                "line-width": 1.5
+            },
+            "filter": [
+                "!=",
+                ["get", "count"],
+                0
+            ]
+        }
+    ]
+}
